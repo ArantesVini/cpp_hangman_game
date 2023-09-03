@@ -9,6 +9,42 @@ int main()
     cout << "║           game           ║" << endl;
     cout << "╚══════════════════════════╝" << endl;
 
+    char difficulty;
+
+    while (true)
+    {
+        cout << "Choose your difficulty level:" << endl;
+        cout << "[ E ] Easy" << endl;
+        cout << "[ M ] Medium" << endl;
+        cout << "[ H ] Hard" << endl;
+
+        cin >> difficulty;
+
+        difficulty = toupper(difficulty);
+
+        if (difficulty == 'E' || difficulty == 'M' || difficulty == 'H')
+        {
+            break;
+        }
+
+        cout << "Invalid difficulty level. Please choose one of the options." << endl;
+    }
+
+    int max_tries;
+
+    switch (difficulty)
+    {
+    case 'E':
+        max_tries = 15;
+        break;
+    case 'M':
+        max_tries = 10;
+        break;
+    case 'H':
+        max_tries = 5;
+        break;
+    }
+
     srand(static_cast<unsigned int>(time(nullptr)));
 
     const int SECRET_NUMBER = rand() % 100;
@@ -19,11 +55,11 @@ int main()
 
     double score = 1000.0;
 
-    while (keep_playing)
-    {
-        try_count++;
+    bool win = false;
 
-        if (cin.fail()) // check if input is not an integer
+    for (try_count = 1; try_count <= max_tries; try_count++)
+    {
+        if (cin.fail())
         {
             try_count--;
             cout << "Invalid input. Please enter an integer." << endl;
@@ -48,7 +84,8 @@ int main()
             cout << "╔══════════════════════════╗" << endl;
             cout << "║         You win!         ║" << endl;
             cout << "╚══════════════════════════╝" << endl;
-            keep_playing = false;
+            win = true;
+            break;
         }
         else if (is_high)
         {
@@ -59,8 +96,15 @@ int main()
             cout << "║         Too low!         ║" << endl;
         }
     }
+
     cout << "║ You tried " << try_count << " times. ║" << endl;
-    cout.precision(3);
-    cout << fixed;
-    cout << "║ Your score is " << score << " points. ║" << endl;
+
+    if (win)
+    {
+        cout << "║ Your score is " << score << " points. ║" << endl;
+    }
+    else
+    {
+        cout << "║         You lose!         ║" << endl;
+    }
 }
