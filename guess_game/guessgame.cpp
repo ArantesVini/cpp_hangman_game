@@ -17,6 +17,8 @@ int main()
     bool keep_playing = true;
     int try_count = 0;
 
+    double score = 1000.0;
+
     while (keep_playing)
     {
         try_count++;
@@ -30,9 +32,12 @@ int main()
             continue;
         }
 
-        try_count++;
         cout << "Enter your guess: ";
         cin >> guess;
+
+        double points_lost = abs(guess - SECRET_NUMBER) / 2.0;
+
+        score -= points_lost;
 
         bool is_right = guess == SECRET_NUMBER;
         bool is_high = guess > SECRET_NUMBER;
@@ -55,4 +60,7 @@ int main()
         }
     }
     cout << "║ You tried " << try_count << " times. ║" << endl;
+    cout.precision(3);
+    cout << fixed;
+    cout << "║ Your score is " << score << " points. ║" << endl;
 }
