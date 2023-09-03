@@ -1,0 +1,1 @@
+CXXFLGAS= -std=c++11
