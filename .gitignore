@@ -32,7 +32,5 @@
 *.app
 
 # Specific files and folders
+*
 *.dSYM/
-hangman_game
-guessgame
-guess_game/guessgame
