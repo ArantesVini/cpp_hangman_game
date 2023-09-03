@@ -11,35 +11,48 @@ int main()
 
     srand(static_cast<unsigned int>(time(nullptr)));
 
-    int secret_number = rand() % 100;
+    const int SECRET_NUMBER = rand() % 100;
 
     int guess;
-    cout << "╔══════════════════════════╗" << endl;
-    cout << "║   Enter your guess:      ║" << endl;
-    cout << "╚══════════════════════════╝" << endl;
-    cin >> guess;
-    cout << "Your guess is " << guess << endl;
+    bool keep_playing = true;
+    int try_count = 0;
 
-    bool is_right = guess == secret_number;
-    bool is_high = guess > secret_number;
-    bool is_low = guess < secret_number;
+    while (keep_playing)
+    {
+        try_count++;
 
-    if (is_right)
-    {
-        cout << "╔══════════════════════════╗" << endl;
-        cout << "║         You win!         ║" << endl;
-        cout << "╚══════════════════════════╝" << endl;
+        if (cin.fail()) // check if input is not an integer
+        {
+            try_count--;
+            cout << "Invalid input. Please enter an integer." << endl;
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            continue;
+        }
+
+        try_count++;
+        cout << "Enter your guess: ";
+        cin >> guess;
+
+        bool is_right = guess == SECRET_NUMBER;
+        bool is_high = guess > SECRET_NUMBER;
+        bool is_low = guess < SECRET_NUMBER;
+
+        if (is_right)
+        {
+            cout << "╔══════════════════════════╗" << endl;
+            cout << "║         You win!         ║" << endl;
+            cout << "╚══════════════════════════╝" << endl;
+            keep_playing = false;
+        }
+        else if (is_high)
+        {
+            cout << "║        Too high!         ║" << endl;
+        }
+        else
+        {
+            cout << "║         Too low!         ║" << endl;
+        }
     }
-    else if (is_high)
-    {
-        cout << "╔══════════════════════════╗" << endl;
-        cout << "║        Too high!          ║" << endl;
-        cout << "╚══════════════════════════╝" << endl;
-    }
-    else
-    {
-        cout << "╔══════════════════════════╗" << endl;
-        cout << "║         Too low!          ║" << endl;
-        cout << "╚══════════════════════════╝" << endl;
-    }
+    cout << "║ You tried " << try_count << " times. ║" << endl;
 }
