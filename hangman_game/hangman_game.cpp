@@ -48,6 +48,74 @@ void print_header()
     cout << "╚══════════════════════════╝" << endl;
 }
 
+vector<string>
+read_file()
+{
+    ifstream file;
+    file.open("words.txt");
+
+    if (file.is_open() == false)
+    {
+        cout << "Sorry, the game is unavailable right now :(" << endl;
+        exit(0);
+    }
+
+    int words_quantity;
+    file >> words_quantity;
+
+    vector<string> words;
+
+    for (int i = 0; i < words_quantity; i++)
+    {
+        string word;
+        file >> word;
+        words.push_back(word);
+    }
+    file.close();
+    return words;
+}
+
+void save_file(vector<string> words)
+{
+    ofstream file;
+    file.open("words.txt");
+
+    if (file.is_open() == false)
+    {
+        cout << "Sorry, the game is unavailable right now :(" << endl;
+        exit(0);
+    }
+    file << words.size();
+    file << endl;
+    for (string word : words)
+    {
+        file << word << endl;
+    }
+    file.close();
+}
+
+void add_word()
+{
+    char response;
+    cin >> response;
+    response = toupper(response);
+
+    if (response == 'N')
+    {
+        return;
+    }
+
+    cout << "Type the new word: ";
+    string new_word;
+    cin >> new_word;
+
+    transform(new_word.begin(), new_word.end(), new_word.begin(), ::toupper);
+
+    vector<string> words = read_file();
+    words.push_back(new_word);
+    save_file(words);
+}
+
 void print_footer()
 {
     cout << "╔══════════════════════════╗" << endl;
@@ -59,6 +127,9 @@ void print_footer()
         cout << "╔══════════════════════════╗" << endl;
         cout << "║         YOU WON!         ║" << endl;
         cout << "╚══════════════════════════╝" << endl;
+
+        cout << "Do you like to add a new word to the game? (Y/N)" << endl;
+        add_word();
     }
     else
     {
@@ -99,26 +170,6 @@ void print_word_with_guesses()
     }
 }
 
-vector<string>
-read_file()
-{
-    ifstream file;
-    file.open("words.txt");
-    int words_quantity;
-    file >> words_quantity;
-
-    vector<string> words;
-
-    for (int i = 0; i < words_quantity; i++)
-    {
-        string word;
-        file >> word;
-        words.push_back(word);
-    }
-
-    return words;
-}
-
 void sort_word()
 {
 
@@ -155,11 +206,9 @@ int main()
 
         if (right_guess(guess))
         {
-            cout << "You got it right!" << endl;
         }
         else
         {
-            cout << "You got it wrong!" << endl;
             wrong_guesses.push_back(guess);
         }
         cout << endl;
