@@ -20,42 +20,95 @@ bool right_guess(char guess)
     return false;
 }
 
-int main()
+bool won()
 {
+    for (char letter : SECRET_WORD)
+    {
+        if (!right_guesses[letter])
+        {
+            return false;
+        }
+    }
+    return true;
+}
 
+bool hanged()
+{
+    return wrong_guesses.size() >= 5;
+}
+
+void print_header()
+{
     cout << "╔══════════════════════════╗" << endl;
     cout << "║      Welcome to the      ║" << endl;
     cout << "║       Hangman game       ║" << endl;
     cout << "╚══════════════════════════╝" << endl;
+}
 
-    bool hanged = false;
-    bool won = false;
+void print_footer()
+{
+    cout << "╔══════════════════════════╗" << endl;
+    cout << "║      END OF THE GAME     ║" << endl;
+    cout << "╚══════════════════════════╝" << endl;
+    cout << endl;
+    if (won())
+    {
+        cout << "╔══════════════════════════╗" << endl;
+        cout << "║         YOU WON!         ║" << endl;
+        cout << "╚══════════════════════════╝" << endl;
+    }
+    else
+    {
+        cout << "╔══════════════════════════╗" << endl;
+        cout << "║         YOU LOST!        ║" << endl;
+        cout << "╚══════════════════════════╝" << endl;
+    }
+    cout << endl;
+    cout << "The word was: " << SECRET_WORD << endl;
+    cout << endl;
+}
 
-    while (hanged == false && won == false)
+void print_wrong_guesses()
+{
+    if (wrong_guesses.size() > 0)
+    {
+        cout << "Wrong guesses: ";
+        for (char letter : wrong_guesses)
+        {
+            cout << letter << " ";
+        }
+        cout << endl;
+    }
+}
+
+void print_word_with_guesses()
+{
+    for (char letter : SECRET_WORD)
+    {
+        if (right_guesses[letter])
+        {
+            cout << letter << " ";
+        }
+        else
+        {
+            cout << "_ ";
+        }
+    }
+}
+
+int main()
+{
+
+    print_header();
+
+    while (hanged() == false && won() == false)
     {
         cout << endl;
 
-        if (wrong_guesses.size() > 0)
-        {
-            cout << "Wrong guesses: ";
-            for (char letter : wrong_guesses)
-            {
-                cout << letter << " ";
-            }
-            cout << endl;
-        }
+        print_wrong_guesses();
 
-        for (char letter : SECRET_WORD)
-        {
-            if (right_guesses[letter])
-            {
-                cout << letter << " ";
-            }
-            else
-            {
-                cout << "_ ";
-            }
-        }
+        print_word_with_guesses();
+
         cout << endl;
 
         char guess;
@@ -76,4 +129,5 @@ int main()
         }
         cout << endl;
     }
+    print_footer();
 }
