@@ -3,16 +3,19 @@
 #include <map>
 #include <vector>
 #include <ctime>
+#include <fstream>
+#include <cstdlib>
+
 using namespace std;
 
-const string SECRET_WORD = "WATERMELON";
+string secret_word = "WATERMELON";
 
 map<char, bool> right_guesses;
 vector<char> wrong_guesses;
 
 bool right_guess(char guess)
 {
-    for (char letter : SECRET_WORD)
+    for (char letter : secret_word)
     {
         if (guess == letter)
             return true;
@@ -22,7 +25,7 @@ bool right_guess(char guess)
 
 bool won()
 {
-    for (char letter : SECRET_WORD)
+    for (char letter : secret_word)
     {
         if (!right_guesses[letter])
         {
@@ -64,7 +67,7 @@ void print_footer()
         cout << "╚══════════════════════════╝" << endl;
     }
     cout << endl;
-    cout << "The word was: " << SECRET_WORD << endl;
+    cout << "The word was: " << secret_word << endl;
     cout << endl;
 }
 
@@ -83,7 +86,7 @@ void print_wrong_guesses()
 
 void print_word_with_guesses()
 {
-    for (char letter : SECRET_WORD)
+    for (char letter : secret_word)
     {
         if (right_guesses[letter])
         {
@@ -96,10 +99,42 @@ void print_word_with_guesses()
     }
 }
 
+vector<string>
+read_file()
+{
+    ifstream file;
+    file.open("words.txt");
+    int words_quantity;
+    file >> words_quantity;
+
+    vector<string> words;
+
+    for (int i = 0; i < words_quantity; i++)
+    {
+        string word;
+        file >> word;
+        words.push_back(word);
+    }
+
+    return words;
+}
+
+void sort_word()
+{
+
+    vector<string> words = read_file();
+    srand(time(NULL));
+    int random = rand() % words.size();
+
+    secret_word = words[random];
+}
+
 int main()
 {
 
     print_header();
+
+    sort_word();
 
     while (hanged() == false && won() == false)
     {
