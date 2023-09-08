@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <read_file.cpp>
-#include <save_file.cpp>
+#include <read_file.hpp>
+#include <save_file.hpp>
 
 void add_word()
 {

@@ -1,6 +1,6 @@
 #include <vector>
 #include <string>
-#include <read_file.cpp>
+#include <read_file.hpp>
 
 std::string secret_word;
 

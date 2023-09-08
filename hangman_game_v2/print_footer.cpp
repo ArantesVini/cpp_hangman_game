@@ -1,6 +1,6 @@
 #include <iostream>
-#include <won.cpp>
-#include <add_word.cpp>
+#include <won.hpp>
+#include <add_word.hpp>
 #include <string>
 
 std::string secret_word;
