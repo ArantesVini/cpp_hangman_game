@@ -63,6 +63,11 @@
     "concepts": "cpp",
     "algorithm": "cpp",
     "map": "cpp",
-    "fstream": "cpp"
+    "fstream": "cpp",
+    "__tree": "cpp",
+    "deque": "cpp",
+    "iomanip": "cpp",
+    "stack": "cpp",
+    "filesystem": "cpp"
   }
 }
