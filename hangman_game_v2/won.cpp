@@ -1,8 +1,8 @@
 #include <string>
 #include <map>
 
-std::string secret_word;
-std::map<char, bool> right_guesses;
+extern std::string secret_word;
+extern std::map<char, bool> right_guesses;
 
 bool won()
 {

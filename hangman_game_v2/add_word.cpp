@@ -1,13 +1,13 @@
 #include <iostream>
-#include <vector>
-#include <string>
-#include <read_file.hpp>
-#include <save_file.hpp>
+#include "read_file.hpp"
+#include "save_file.hpp"
+#include "add_word.hpp"
 
 void add_word()
 {
     char response;
     std::cin >> response;
+
     response = toupper(response);
 
     if (response == 'N')

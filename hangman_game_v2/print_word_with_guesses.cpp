@@ -2,8 +2,8 @@
 #include <map>
 #include <string>
 
-std::map<char, bool> right_guesses;
-std::string secret_word;
+extern std::map<char, bool> right_guesses;
+extern std::string secret_word;
 
 void print_word_with_guesses()
 {

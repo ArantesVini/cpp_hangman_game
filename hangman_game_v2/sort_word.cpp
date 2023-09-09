@@ -1,8 +1,8 @@
 #include <vector>
 #include <string>
-#include <read_file.hpp>
+#include "read_file.hpp"
 
-std::string secret_word;
+extern std::string secret_word;
 
 void sort_word()
 {

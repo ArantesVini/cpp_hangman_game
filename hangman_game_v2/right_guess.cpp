@@ -1,6 +1,6 @@
 #include <string>
 
-std::string secret_word;
+extern std::string secret_word;
 
 bool right_guess(char guess)
 {

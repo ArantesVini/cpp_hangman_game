@@ -1,9 +1,9 @@
 #include <iostream>
-#include <won.hpp>
-#include <add_word.hpp>
-#include <string>
+#include "won.hpp"
+#include "add_word.hpp"
+#include "print_footer.hpp"
 
-std::string secret_word;
+extern std::string secret_word;
 
 void print_footer()
 {

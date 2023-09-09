@@ -1,6 +1,6 @@
 #include <vector>
 
-std::vector<char> wrong_guesses;
+extern std::vector<char> wrong_guesses;
 
 bool hanged()
 {

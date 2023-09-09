@@ -1,1 +1,3 @@
+#include <vector>
+
 bool hanged();

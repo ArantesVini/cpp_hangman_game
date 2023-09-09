@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-std::vector<char> wrong_guesses;
+extern std::vector<char> wrong_guesses;
 
 void print_wrong_guesses()
 {

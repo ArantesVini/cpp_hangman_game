@@ -5,14 +5,14 @@
 #include <ctime>
 #include <fstream>
 #include <cstdlib>
-#include <print_header.hpp>
-#include <sort_word.hpp>
-#include <hanged.hpp>
-#include <won.hpp>
-#include <print_wrong_guesses.hpp>
-#include <print_word_with_guesses.hpp>
-#include <right_guess.hpp>
-#include <print_footer.hpp>
+#include "print_header.hpp"
+#include "sort_word.hpp"
+#include "hanged.hpp"
+#include "won.hpp"
+#include "print_wrong_guesses.hpp"
+#include "print_word_with_guesses.hpp"
+#include "right_guess.hpp"
+#include "print_footer.hpp"
 
 using namespace std;
 
