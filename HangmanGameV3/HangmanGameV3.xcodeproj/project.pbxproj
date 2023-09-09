@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A26E4C4E2AACB5B90043AC4A /* read_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C372AACB5B80043AC4A /* read_file.cpp */; };
+		A26E4C4F2AACB5B90043AC4A /* print_wrong_guesses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C382AACB5B80043AC4A /* print_wrong_guesses.cpp */; };
+		A26E4C502AACB5B90043AC4A /* hanged.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C392AACB5B80043AC4A /* hanged.cpp */; };
+		A26E4C512AACB5B90043AC4A /* hangman_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C3A2AACB5B80043AC4A /* hangman_game.cpp */; };
+		A26E4C522AACB5B90043AC4A /* won.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C3B2AACB5B80043AC4A /* won.cpp */; };
+		A26E4C532AACB5B90043AC4A /* add_word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C3C2AACB5B80043AC4A /* add_word.cpp */; };
+		A26E4C542AACB5B90043AC4A /* print_word_with_guesses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C3F2AACB5B80043AC4A /* print_word_with_guesses.cpp */; };
+		A26E4C552AACB5B90043AC4A /* save_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C402AACB5B80043AC4A /* save_file.cpp */; };
+		A26E4C562AACB5B90043AC4A /* sort_word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C432AACB5B80043AC4A /* sort_word.cpp */; };
+		A26E4C572AACB5B90043AC4A /* print_footer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C462AACB5B90043AC4A /* print_footer.cpp */; };
+		A26E4C582AACB5B90043AC4A /* right_guess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C4A2AACB5B90043AC4A /* right_guess.cpp */; };
+		A26E4C592AACB5B90043AC4A /* print_header.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C4D2AACB5B90043AC4A /* print_header.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A26E4C2A2AACB5760043AC4A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A26E4C2C2AACB5760043AC4A /* HangmanGameV3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HangmanGameV3; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26E4C372AACB5B80043AC4A /* read_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = read_file.cpp; sourceTree = SOURCE_ROOT; };
+		A26E4C382AACB5B80043AC4A /* print_wrong_guesses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = print_wrong_guesses.cpp; sourceTree = SOURCE_ROOT; };
+		A26E4C392AACB5B80043AC4A /* hanged.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hanged.cpp; sourceTree = SOURCE_ROOT; };
+		A26E4C3A2AACB5B80043AC4A /* hangman_game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hangman_game.cpp; sourceTree = SOURCE_ROOT; };
+		A26E4C3B2AACB5B80043AC4A /* won.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = won.cpp; sourceTree = SOURCE_ROOT; };
+		A26E4C3C2AACB5B80043AC4A /* add_word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = add_word.cpp; sourceTree = SOURCE_ROOT; };
+		A26E4C3D2AACB5B80043AC4A /* hanged.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hanged.hpp; sourceTree = SOURCE_ROOT; };
+		A26E4C3E2AACB5B80043AC4A /* add_word.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = add_word.hpp; sourceTree = SOURCE_ROOT; };
+		A26E4C3F2AACB5B80043AC4A /* print_word_with_guesses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = print_word_with_guesses.cpp; sourceTree = SOURCE_ROOT; };
+		A26E4C402AACB5B80043AC4A /* save_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = save_file.cpp; sourceTree = SOURCE_ROOT; };
+		A26E4C412AACB5B80043AC4A /* print_header.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = print_header.hpp; sourceTree = SOURCE_ROOT; };
+		A26E4C422AACB5B80043AC4A /* read_file.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = read_file.hpp; sourceTree = SOURCE_ROOT; };
+		A26E4C432AACB5B80043AC4A /* sort_word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sort_word.cpp; sourceTree = SOURCE_ROOT; };
+		A26E4C442AACB5B80043AC4A /* right_guess.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = right_guess.hpp; sourceTree = SOURCE_ROOT; };
+		A26E4C452AACB5B90043AC4A /* print_footer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = print_footer.hpp; sourceTree = SOURCE_ROOT; };
+		A26E4C462AACB5B90043AC4A /* print_footer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = print_footer.cpp; sourceTree = SOURCE_ROOT; };
+		A26E4C472AACB5B90043AC4A /* print_word_with_guesses.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = print_word_with_guesses.hpp; sourceTree = SOURCE_ROOT; };
+		A26E4C482AACB5B90043AC4A /* print_wrong_guesses.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = print_wrong_guesses.hpp; sourceTree = SOURCE_ROOT; };
+		A26E4C492AACB5B90043AC4A /* save_file.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = save_file.hpp; sourceTree = SOURCE_ROOT; };
+		A26E4C4A2AACB5B90043AC4A /* right_guess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = right_guess.cpp; sourceTree = SOURCE_ROOT; };
+		A26E4C4B2AACB5B90043AC4A /* sort_word.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sort_word.hpp; sourceTree = SOURCE_ROOT; };
+		A26E4C4C2AACB5B90043AC4A /* won.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = won.hpp; sourceTree = SOURCE_ROOT; };
+		A26E4C4D2AACB5B90043AC4A /* print_header.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = print_header.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A26E4C292AACB5760043AC4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A26E4C232AACB5760043AC4A = {
+			isa = PBXGroup;
+			children = (
+				A26E4C2E2AACB5760043AC4A /* HangmanGameV3 */,
+				A26E4C2D2AACB5760043AC4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A26E4C2D2AACB5760043AC4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A26E4C2C2AACB5760043AC4A /* HangmanGameV3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A26E4C2E2AACB5760043AC4A /* HangmanGameV3 */ = {
+			isa = PBXGroup;
+			children = (
+				A26E4C3C2AACB5B80043AC4A /* add_word.cpp */,
+				A26E4C3E2AACB5B80043AC4A /* add_word.hpp */,
+				A26E4C392AACB5B80043AC4A /* hanged.cpp */,
+				A26E4C3D2AACB5B80043AC4A /* hanged.hpp */,
+				A26E4C3A2AACB5B80043AC4A /* hangman_game.cpp */,
+				A26E4C462AACB5B90043AC4A /* print_footer.cpp */,
+				A26E4C452AACB5B90043AC4A /* print_footer.hpp */,
+				A26E4C4D2AACB5B90043AC4A /* print_header.cpp */,
+				A26E4C412AACB5B80043AC4A /* print_header.hpp */,
+				A26E4C3F2AACB5B80043AC4A /* print_word_with_guesses.cpp */,
+				A26E4C472AACB5B90043AC4A /* print_word_with_guesses.hpp */,
+				A26E4C382AACB5B80043AC4A /* print_wrong_guesses.cpp */,
+				A26E4C482AACB5B90043AC4A /* print_wrong_guesses.hpp */,
+				A26E4C372AACB5B80043AC4A /* read_file.cpp */,
+				A26E4C422AACB5B80043AC4A /* read_file.hpp */,
+				A26E4C4A2AACB5B90043AC4A /* right_guess.cpp */,
+				A26E4C442AACB5B80043AC4A /* right_guess.hpp */,
+				A26E4C402AACB5B80043AC4A /* save_file.cpp */,
+				A26E4C492AACB5B90043AC4A /* save_file.hpp */,
+				A26E4C432AACB5B80043AC4A /* sort_word.cpp */,
+				A26E4C4B2AACB5B90043AC4A /* sort_word.hpp */,
+				A26E4C3B2AACB5B80043AC4A /* won.cpp */,
+				A26E4C4C2AACB5B90043AC4A /* won.hpp */,
+			);
+			path = HangmanGameV3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A26E4C2B2AACB5760043AC4A /* HangmanGameV3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26E4C332AACB5760043AC4A /* Build configuration list for PBXNativeTarget "HangmanGameV3" */;
+			buildPhases = (
+				A26E4C282AACB5760043AC4A /* Sources */,
+				A26E4C292AACB5760043AC4A /* Frameworks */,
+				A26E4C2A2AACB5760043AC4A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HangmanGameV3;
+			productName = HangmanGameV3;
+			productReference = A26E4C2C2AACB5760043AC4A /* HangmanGameV3 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A26E4C242AACB5760043AC4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A26E4C2B2AACB5760043AC4A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A26E4C272AACB5760043AC4A /* Build configuration list for PBXProject "HangmanGameV3" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A26E4C232AACB5760043AC4A;
+			productRefGroup = A26E4C2D2AACB5760043AC4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A26E4C2B2AACB5760043AC4A /* HangmanGameV3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A26E4C282AACB5760043AC4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26E4C562AACB5B90043AC4A /* sort_word.cpp in Sources */,
+				A26E4C542AACB5B90043AC4A /* print_word_with_guesses.cpp in Sources */,
+				A26E4C592AACB5B90043AC4A /* print_header.cpp in Sources */,
+				A26E4C512AACB5B90043AC4A /* hangman_game.cpp in Sources */,
+				A26E4C502AACB5B90043AC4A /* hanged.cpp in Sources */,
+				A26E4C522AACB5B90043AC4A /* won.cpp in Sources */,
+				A26E4C552AACB5B90043AC4A /* save_file.cpp in Sources */,
+				A26E4C4E2AACB5B90043AC4A /* read_file.cpp in Sources */,
+				A26E4C4F2AACB5B90043AC4A /* print_wrong_guesses.cpp in Sources */,
+				A26E4C572AACB5B90043AC4A /* print_footer.cpp in Sources */,
+				A26E4C582AACB5B90043AC4A /* right_guess.cpp in Sources */,
+				A26E4C532AACB5B90043AC4A /* add_word.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A26E4C312AACB5760043AC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A26E4C322AACB5760043AC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A26E4C342AACB5760043AC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A26E4C352AACB5760043AC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A26E4C272AACB5760043AC4A /* Build configuration list for PBXProject "HangmanGameV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26E4C312AACB5760043AC4A /* Debug */,
+				A26E4C322AACB5760043AC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26E4C332AACB5760043AC4A /* Build configuration list for PBXNativeTarget "HangmanGameV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26E4C342AACB5760043AC4A /* Debug */,
+				A26E4C352AACB5760043AC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A26E4C242AACB5760043AC4A /* Project object */;
+}
