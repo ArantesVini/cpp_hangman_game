@@ -2,4 +2,4 @@
 #include <string>
 
 
-bool won(std::string& secret_word, std::map<char, bool>& right_guesses);
+bool won(const std::string& secret_word, const std::map<char, bool>& right_guesses);

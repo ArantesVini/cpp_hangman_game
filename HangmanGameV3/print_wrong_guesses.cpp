@@ -1,7 +1,7 @@
 #include <iostream>
 #include "print_wrong_guesses.hpp"
 
-void print_wrong_guesses(std::vector<char>& wrong_guesses)
+void print_wrong_guesses(const std::vector<char>& wrong_guesses)
 {
     if (wrong_guesses.size() > 0)
     {
