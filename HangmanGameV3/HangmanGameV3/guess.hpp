@@ -2,4 +2,4 @@
 #include <map>
 
 
-void guess(std::map<char, bool>* right_guesses, std::vector<char>* wrong_guesses);
+void guess(std::map<char, bool>& right_guesses, std::vector<char>& wrong_guesses);

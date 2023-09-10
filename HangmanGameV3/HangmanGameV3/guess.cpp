@@ -1,25 +1,23 @@
 #include <iostream>
-#include <vector>
-#include <map>
 #include "guess.hpp"
 #include "right_guess.hpp"
 
 
-void guess(std::map<char, bool>* right_guesses, std::vector<char>* wrong_guesses)
+void guess(std::map<char, bool>& right_guesses, std::vector<char>& wrong_guesses)
 {
     std::cout << "Type your guess: ";
     char guess;
     std::cin >> guess;
     guess = toupper(guess);
 
-    (*right_guesses)[guess] = true;
+    right_guesses[guess] = true;
 
     if (right_guess(guess))
     {
     }
     else
     {
-        wrong_guesses->push_back(guess);
+        wrong_guesses.push_back(guess);
     }
     std::cout << std::endl;
 }

@@ -34,7 +34,7 @@ int main()
 
         cout << endl;
 
-        guess(&right_guesses, &wrong_guesses);
+        guess(right_guesses, wrong_guesses);
         
     }
     print_footer(secret_word, right_guesses);
