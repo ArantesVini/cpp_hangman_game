@@ -1,4 +1,4 @@
 #pragma once
-#include <vector>
+#include <array>
 
-void print_wrong_guesses(const std::vector<char>& wrong_guesses);
+void print_wrong_guesses(const std::array<char, 5>& wrong_guesses);

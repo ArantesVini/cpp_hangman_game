@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include <vector>
+#include <array>
 #include "print_header.hpp"
 #include "sort_word.hpp"
 #include "won.hpp"
@@ -19,13 +19,13 @@ int main()
 
     string secret_word;
     map<char, bool> right_guesses;
-    vector<char> wrong_guesses;
+    array<char, 5> wrong_guesses;
 
     print_header();
 
     secret_word = sort_word();
 
-    while (wrong_guesses.size() < 5 && won(secret_word, right_guesses) == false)
+    while (won(secret_word, right_guesses) == false)
     {
         cout << endl;
 

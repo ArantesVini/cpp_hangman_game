@@ -1,9 +1,11 @@
 #include <iostream>
+#include <array>
+#include <map>
+#include <algorithm>
 #include "guess.hpp"
 #include "right_guess.hpp"
 
-
-void guess(std::map<char, bool>& right_guesses, std::vector<char>& wrong_guesses, const std::string& secret_word)
+void guess(std::map<char, bool>& right_guesses, std::array<char, 5>& wrong_guesses, const std::string& secret_word)
 {
     std::cout << "Type your guess: ";
     char guess;
@@ -12,9 +14,27 @@ void guess(std::map<char, bool>& right_guesses, std::vector<char>& wrong_guesses
 
     right_guesses[guess] = true;
 
-    if (!right_guess(guess, secret_word) && std::find(wrong_guesses.begin(), wrong_guesses.end(), guess) == wrong_guesses.end())
+    bool already_guessed = false;
+    for (int i = 0; i < wrong_guesses.size(); i++)
     {
-        wrong_guesses.push_back(guess);
+        if (wrong_guesses[i] == guess)
+        {
+            already_guessed = true;
+            break;
+        }
+    }
+
+    if (!right_guess(guess, secret_word) && !already_guessed)
+    {
+        int index = 0;
+        while (index < wrong_guesses.size() && wrong_guesses[index] != '\0')
+        {
+            index++;
+        }
+        if (index < wrong_guesses.size())
+        {
+            wrong_guesses[index] = guess;
+        }
     }
     std::cout << std::endl;
 }
