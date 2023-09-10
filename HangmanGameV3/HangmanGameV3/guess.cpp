@@ -12,10 +12,7 @@ void guess(std::map<char, bool>& right_guesses, std::vector<char>& wrong_guesses
 
     right_guesses[guess] = true;
 
-    if (right_guess(guess))
-    {
-    }
-    else
+    if (!right_guess(guess))
     {
         wrong_guesses.push_back(guess);
     }
