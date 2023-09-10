@@ -13,12 +13,13 @@
 
 using namespace std;
 
-static string secret_word;
-static map<char, bool> right_guesses;
-static vector<char> wrong_guesses;
 
 int main()
 {
+
+    string secret_word;
+    map<char, bool> right_guesses;
+    vector<char> wrong_guesses;
 
     print_header();
 
