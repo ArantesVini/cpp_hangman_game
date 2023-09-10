@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A26E4C4E2AACB5B90043AC4A /* read_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C372AACB5B80043AC4A /* read_file.cpp */; };
 		A26E4C4F2AACB5B90043AC4A /* print_wrong_guesses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C382AACB5B80043AC4A /* print_wrong_guesses.cpp */; };
 		A26E4C512AACB5B90043AC4A /* hangman_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C3A2AACB5B80043AC4A /* hangman_game.cpp */; };
 		A26E4C522AACB5B90043AC4A /* won.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C3B2AACB5B80043AC4A /* won.cpp */; };
@@ -18,6 +17,7 @@
 		A26E4C572AACB5B90043AC4A /* print_footer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C462AACB5B90043AC4A /* print_footer.cpp */; };
 		A26E4C582AACB5B90043AC4A /* right_guess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C4A2AACB5B90043AC4A /* right_guess.cpp */; };
 		A29DF7432AAE0EFA0092D10D /* guess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A29DF7412AAE0EFA0092D10D /* guess.cpp */; };
+		A29DF7472AAE2A770092D10D /* read_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A29DF7462AAE2A770092D10D /* read_file.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		A26E4C2C2AACB5760043AC4A /* HangmanGameV3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HangmanGameV3; sourceTree = BUILT_PRODUCTS_DIR; };
-		A26E4C372AACB5B80043AC4A /* read_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = read_file.cpp; sourceTree = SOURCE_ROOT; };
 		A26E4C382AACB5B80043AC4A /* print_wrong_guesses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = print_wrong_guesses.cpp; sourceTree = SOURCE_ROOT; };
 		A26E4C3A2AACB5B80043AC4A /* hangman_game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hangman_game.cpp; sourceTree = SOURCE_ROOT; };
 		A26E4C3B2AACB5B80043AC4A /* won.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = won.cpp; sourceTree = SOURCE_ROOT; };
@@ -56,6 +55,7 @@
 		A26E4C4C2AACB5B90043AC4A /* won.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = won.hpp; sourceTree = SOURCE_ROOT; };
 		A29DF7412AAE0EFA0092D10D /* guess.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = guess.cpp; sourceTree = "<group>"; };
 		A29DF7422AAE0EFA0092D10D /* guess.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = guess.hpp; sourceTree = "<group>"; };
+		A29DF7462AAE2A770092D10D /* read_file.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = read_file.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 				A26E4C472AACB5B90043AC4A /* print_word_with_guesses.hpp */,
 				A26E4C382AACB5B80043AC4A /* print_wrong_guesses.cpp */,
 				A26E4C482AACB5B90043AC4A /* print_wrong_guesses.hpp */,
-				A26E4C372AACB5B80043AC4A /* read_file.cpp */,
+				A29DF7462AAE2A770092D10D /* read_file.cpp */,
 				A26E4C422AACB5B80043AC4A /* read_file.hpp */,
 				A26E4C4A2AACB5B90043AC4A /* right_guess.cpp */,
 				A26E4C442AACB5B80043AC4A /* right_guess.hpp */,
@@ -176,8 +176,8 @@
 				A26E4C512AACB5B90043AC4A /* hangman_game.cpp in Sources */,
 				A29DF7432AAE0EFA0092D10D /* guess.cpp in Sources */,
 				A26E4C522AACB5B90043AC4A /* won.cpp in Sources */,
+				A29DF7472AAE2A770092D10D /* read_file.cpp in Sources */,
 				A26E4C552AACB5B90043AC4A /* save_file.cpp in Sources */,
-				A26E4C4E2AACB5B90043AC4A /* read_file.cpp in Sources */,
 				A26E4C4F2AACB5B90043AC4A /* print_wrong_guesses.cpp in Sources */,
 				A26E4C572AACB5B90043AC4A /* print_footer.cpp in Sources */,
 				A26E4C582AACB5B90043AC4A /* right_guess.cpp in Sources */,
