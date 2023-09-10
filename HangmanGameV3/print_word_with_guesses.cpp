@@ -1,11 +1,10 @@
 #include <iostream>
 #include <map>
 #include <string>
+#include "print_word_with_guesses.hpp"
 
-extern std::map<char, bool> right_guesses;
-extern std::string secret_word;
 
-void print_word_with_guesses()
+void print_word_with_guesses(std::map<char, bool> right_guesses, std::string secret_word)
 {
     for (char letter : secret_word)
     {

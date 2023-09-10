@@ -3,15 +3,14 @@
 #include "add_word.hpp"
 #include "print_footer.hpp"
 
-extern std::string secret_word;
 
-void print_footer()
+void print_footer(std::string secret_word, std::map<char, bool> right_guesses)
 {
     std::cout << "╔══════════════════════════╗" << std::endl;
     std::cout << "║      END OF THE GAME     ║" << std::endl;
     std::cout << "╚══════════════════════════╝" << std::endl;
     std::cout << std::endl;
-    if (won())
+    if (won(secret_word, right_guesses))
     {
         std::cout << "╔══════════════════════════╗" << std::endl;
         std::cout << "║         YOU WON!         ║" << std::endl;

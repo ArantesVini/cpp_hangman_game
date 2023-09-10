@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A26E4C4E2AACB5B90043AC4A /* read_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C372AACB5B80043AC4A /* read_file.cpp */; };
 		A26E4C4F2AACB5B90043AC4A /* print_wrong_guesses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C382AACB5B80043AC4A /* print_wrong_guesses.cpp */; };
-		A26E4C502AACB5B90043AC4A /* hanged.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C392AACB5B80043AC4A /* hanged.cpp */; };
 		A26E4C512AACB5B90043AC4A /* hangman_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C3A2AACB5B80043AC4A /* hangman_game.cpp */; };
 		A26E4C522AACB5B90043AC4A /* won.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C3B2AACB5B80043AC4A /* won.cpp */; };
 		A26E4C532AACB5B90043AC4A /* add_word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C3C2AACB5B80043AC4A /* add_word.cpp */; };
@@ -18,7 +17,6 @@
 		A26E4C562AACB5B90043AC4A /* sort_word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C432AACB5B80043AC4A /* sort_word.cpp */; };
 		A26E4C572AACB5B90043AC4A /* print_footer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C462AACB5B90043AC4A /* print_footer.cpp */; };
 		A26E4C582AACB5B90043AC4A /* right_guess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C4A2AACB5B90043AC4A /* right_guess.cpp */; };
-		A26E4C592AACB5B90043AC4A /* print_header.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C4D2AACB5B90043AC4A /* print_header.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,11 +35,9 @@
 		A26E4C2C2AACB5760043AC4A /* HangmanGameV3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HangmanGameV3; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26E4C372AACB5B80043AC4A /* read_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = read_file.cpp; sourceTree = SOURCE_ROOT; };
 		A26E4C382AACB5B80043AC4A /* print_wrong_guesses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = print_wrong_guesses.cpp; sourceTree = SOURCE_ROOT; };
-		A26E4C392AACB5B80043AC4A /* hanged.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hanged.cpp; sourceTree = SOURCE_ROOT; };
 		A26E4C3A2AACB5B80043AC4A /* hangman_game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hangman_game.cpp; sourceTree = SOURCE_ROOT; };
 		A26E4C3B2AACB5B80043AC4A /* won.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = won.cpp; sourceTree = SOURCE_ROOT; };
 		A26E4C3C2AACB5B80043AC4A /* add_word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = add_word.cpp; sourceTree = SOURCE_ROOT; };
-		A26E4C3D2AACB5B80043AC4A /* hanged.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hanged.hpp; sourceTree = SOURCE_ROOT; };
 		A26E4C3E2AACB5B80043AC4A /* add_word.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = add_word.hpp; sourceTree = SOURCE_ROOT; };
 		A26E4C3F2AACB5B80043AC4A /* print_word_with_guesses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = print_word_with_guesses.cpp; sourceTree = SOURCE_ROOT; };
 		A26E4C402AACB5B80043AC4A /* save_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = save_file.cpp; sourceTree = SOURCE_ROOT; };
@@ -57,7 +53,6 @@
 		A26E4C4A2AACB5B90043AC4A /* right_guess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = right_guess.cpp; sourceTree = SOURCE_ROOT; };
 		A26E4C4B2AACB5B90043AC4A /* sort_word.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sort_word.hpp; sourceTree = SOURCE_ROOT; };
 		A26E4C4C2AACB5B90043AC4A /* won.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = won.hpp; sourceTree = SOURCE_ROOT; };
-		A26E4C4D2AACB5B90043AC4A /* print_header.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = print_header.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +87,9 @@
 			children = (
 				A26E4C3C2AACB5B80043AC4A /* add_word.cpp */,
 				A26E4C3E2AACB5B80043AC4A /* add_word.hpp */,
-				A26E4C392AACB5B80043AC4A /* hanged.cpp */,
-				A26E4C3D2AACB5B80043AC4A /* hanged.hpp */,
 				A26E4C3A2AACB5B80043AC4A /* hangman_game.cpp */,
 				A26E4C462AACB5B90043AC4A /* print_footer.cpp */,
 				A26E4C452AACB5B90043AC4A /* print_footer.hpp */,
-				A26E4C4D2AACB5B90043AC4A /* print_header.cpp */,
 				A26E4C412AACB5B80043AC4A /* print_header.hpp */,
 				A26E4C3F2AACB5B80043AC4A /* print_word_with_guesses.cpp */,
 				A26E4C472AACB5B90043AC4A /* print_word_with_guesses.hpp */,
@@ -176,9 +168,7 @@
 			files = (
 				A26E4C562AACB5B90043AC4A /* sort_word.cpp in Sources */,
 				A26E4C542AACB5B90043AC4A /* print_word_with_guesses.cpp in Sources */,
-				A26E4C592AACB5B90043AC4A /* print_header.cpp in Sources */,
 				A26E4C512AACB5B90043AC4A /* hangman_game.cpp in Sources */,
-				A26E4C502AACB5B90043AC4A /* hanged.cpp in Sources */,
 				A26E4C522AACB5B90043AC4A /* won.cpp in Sources */,
 				A26E4C552AACB5B90043AC4A /* save_file.cpp in Sources */,
 				A26E4C4E2AACB5B90043AC4A /* read_file.cpp in Sources */,

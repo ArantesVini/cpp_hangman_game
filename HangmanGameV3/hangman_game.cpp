@@ -4,7 +4,6 @@
 #include <vector>
 #include "print_header.hpp"
 #include "sort_word.hpp"
-#include "hanged.hpp"
 #include "won.hpp"
 #include "print_wrong_guesses.hpp"
 #include "print_word_with_guesses.hpp"
@@ -14,7 +13,6 @@
 using namespace std;
 
 string secret_word;
-
 map<char, bool> right_guesses;
 vector<char> wrong_guesses;
 
@@ -23,15 +21,15 @@ int main()
 
     print_header();
 
-    sort_word();
+    secret_word = sort_word();
 
-    while (hanged() == false && won() == false)
+    while (wrong_guesses.size() < 5 && won(secret_word, right_guesses) == false)
     {
         cout << endl;
 
-        print_wrong_guesses();
+        print_wrong_guesses(wrong_guesses);
 
-        print_word_with_guesses();
+        print_word_with_guesses(right_guesses, secret_word);
 
         cout << endl;
 
@@ -51,5 +49,5 @@ int main()
         }
         cout << endl;
     }
-    print_footer();
+    print_footer(secret_word, right_guesses);
 }

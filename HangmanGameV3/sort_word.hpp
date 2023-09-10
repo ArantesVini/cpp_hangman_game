@@ -1,3 +1,4 @@
 #pragma once
+#include <string>
 
-void sort_word();
+std::string sort_word();

@@ -1,9 +1,8 @@
 #include <iostream>
 #include <vector>
+#include "print_wrong_guesses.hpp"
 
-extern std::vector<char> wrong_guesses;
-
-void print_wrong_guesses()
+void print_wrong_guesses(std::vector<char> wrong_guesses)
 {
     if (wrong_guesses.size() > 0)
     {
