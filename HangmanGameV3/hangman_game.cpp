@@ -9,6 +9,7 @@
 #include "print_word_with_guesses.hpp"
 #include "right_guess.hpp"
 #include "print_footer.hpp"
+#include "guess.hpp"
 
 using namespace std;
 
@@ -33,21 +34,8 @@ int main()
 
         cout << endl;
 
-        char guess;
-        cout << "Type your guess: ";
-        cin >> guess;
-        guess = toupper(guess);
-
-        right_guesses[guess] = true;
-
-        if (right_guess(guess))
-        {
-        }
-        else
-        {
-            wrong_guesses.push_back(guess);
-        }
-        cout << endl;
+        guess(&right_guesses, &wrong_guesses);
+        
     }
     print_footer(secret_word, right_guesses);
 }

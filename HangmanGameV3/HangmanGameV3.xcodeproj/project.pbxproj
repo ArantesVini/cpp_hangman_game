@@ -17,6 +17,7 @@
 		A26E4C562AACB5B90043AC4A /* sort_word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C432AACB5B80043AC4A /* sort_word.cpp */; };
 		A26E4C572AACB5B90043AC4A /* print_footer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C462AACB5B90043AC4A /* print_footer.cpp */; };
 		A26E4C582AACB5B90043AC4A /* right_guess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26E4C4A2AACB5B90043AC4A /* right_guess.cpp */; };
+		A29DF7432AAE0EFA0092D10D /* guess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A29DF7412AAE0EFA0092D10D /* guess.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,8 @@
 		A26E4C4A2AACB5B90043AC4A /* right_guess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = right_guess.cpp; sourceTree = SOURCE_ROOT; };
 		A26E4C4B2AACB5B90043AC4A /* sort_word.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sort_word.hpp; sourceTree = SOURCE_ROOT; };
 		A26E4C4C2AACB5B90043AC4A /* won.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = won.hpp; sourceTree = SOURCE_ROOT; };
+		A29DF7412AAE0EFA0092D10D /* guess.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = guess.cpp; sourceTree = "<group>"; };
+		A29DF7422AAE0EFA0092D10D /* guess.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = guess.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				A26E4C4B2AACB5B90043AC4A /* sort_word.hpp */,
 				A26E4C3B2AACB5B80043AC4A /* won.cpp */,
 				A26E4C4C2AACB5B90043AC4A /* won.hpp */,
+				A29DF7412AAE0EFA0092D10D /* guess.cpp */,
+				A29DF7422AAE0EFA0092D10D /* guess.hpp */,
 			);
 			path = HangmanGameV3;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				A26E4C562AACB5B90043AC4A /* sort_word.cpp in Sources */,
 				A26E4C542AACB5B90043AC4A /* print_word_with_guesses.cpp in Sources */,
 				A26E4C512AACB5B90043AC4A /* hangman_game.cpp in Sources */,
+				A29DF7432AAE0EFA0092D10D /* guess.cpp in Sources */,
 				A26E4C522AACB5B90043AC4A /* won.cpp in Sources */,
 				A26E4C552AACB5B90043AC4A /* save_file.cpp in Sources */,
 				A26E4C4E2AACB5B90043AC4A /* read_file.cpp in Sources */,
