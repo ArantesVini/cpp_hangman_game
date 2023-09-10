@@ -1,8 +1,7 @@
-#include <string>
+#include "right_guess.hpp"
 
-extern std::string secret_word;
 
-bool right_guess(char guess)
+bool right_guess(char guess, const std::string& secret_word)
 {
     for (char letter : secret_word)
     {

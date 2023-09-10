@@ -3,6 +3,7 @@
 #include <fstream>
 
 extern std::vector<std::string>
+
 read_file()
 {
     std::ifstream file;

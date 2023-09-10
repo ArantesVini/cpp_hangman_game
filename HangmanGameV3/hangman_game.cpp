@@ -13,9 +13,9 @@
 
 using namespace std;
 
-string secret_word;
-map<char, bool> right_guesses;
-vector<char> wrong_guesses;
+static string secret_word;
+static map<char, bool> right_guesses;
+static vector<char> wrong_guesses;
 
 int main()
 {
@@ -34,7 +34,7 @@ int main()
 
         cout << endl;
 
-        guess(right_guesses, wrong_guesses);
+        guess(right_guesses, wrong_guesses, secret_word);
         
     }
     print_footer(secret_word, right_guesses);
