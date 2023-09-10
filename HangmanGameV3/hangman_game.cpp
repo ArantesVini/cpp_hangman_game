@@ -2,9 +2,6 @@
 #include <string>
 #include <map>
 #include <vector>
-#include <ctime>
-#include <fstream>
-#include <cstdlib>
 #include "print_header.hpp"
 #include "sort_word.hpp"
 #include "hanged.hpp"
