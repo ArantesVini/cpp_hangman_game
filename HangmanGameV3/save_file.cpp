@@ -3,7 +3,7 @@
 #include <vector>
 #include <fstream>
 
-void save_file(std::vector<std::string> words)
+void save_file(const std::vector<std::string>& words)
 {
     std::ofstream file;
     file.open("words.txt");

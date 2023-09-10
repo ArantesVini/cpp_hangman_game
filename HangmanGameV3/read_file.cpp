@@ -1,10 +1,9 @@
+#include "read_file.hpp"
 #include <iostream>
-#include <vector>
 #include <fstream>
 
-extern std::vector<std::string>
 
-read_file()
+std::vector<std::string> read_file()
 {
     std::ifstream file;
     file.open("words.txt");

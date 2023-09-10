@@ -2,4 +2,4 @@
 #include <string>
 #include <vector>
 
-void save_file(std::vector<std::string> words);
+void save_file(const std::vector<std::string>& words);
