@@ -12,6 +12,7 @@ private:
     static int accountsQuantity;
 public:
     Account(std::string number, std::string holderDocumentNumber, std::string holderName);
+    ~Account();
     std::string getNumber() const;
     std::string  getHolderDocumentNumber() const;
     std::string  getHolderName() const;

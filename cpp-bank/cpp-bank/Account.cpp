@@ -14,6 +14,12 @@ Account::Account(std::string number, std::string holderDocumentNumber, std::stri
     accountsQuantity++;
 }
 
+// Destructor
+
+Account::~Account() {
+    accountsQuantity--;
+}
+
 // Getters
 std::string Account::getNumber() const
 {
