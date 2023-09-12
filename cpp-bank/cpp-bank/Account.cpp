@@ -1,6 +1,44 @@
 #include "Account.hpp"
 #include <iostream>
 
+// Getters
+std::string Account::getNumber()
+{
+    return number;
+}
+
+std::string Account::getHolderDocumentNumber()
+{
+    return holderDocumentNumber;
+}
+
+std::string Account::getHolderName()
+{
+    return holderName;
+}
+
+float Account::getBalance()
+{
+    return balance;
+}
+
+// Setters
+void Account::setNumber(std::string num)
+{
+    number = num;
+}
+
+void Account::setHolderDocumentNumber(std::string documentNumber)
+{
+    holderDocumentNumber = documentNumber;
+}
+
+void Account::setHolderName(std::string name)
+{
+    holderName = name;
+}
+
+// Methods
 void Account::withdraw(float withdrawValue)
 {
     if (balance < withdrawValue)
