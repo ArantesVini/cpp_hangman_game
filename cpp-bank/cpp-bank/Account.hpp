@@ -9,6 +9,7 @@ private:
     std::string holderDocumentNumber;
     std::string holderName;
     float balance;
+    static int accountsQuantity;
 public:
     Account(std::string number, std::string holderDocumentNumber, std::string holderName);
     std::string getNumber() const;
@@ -17,4 +18,5 @@ public:
     float getBalance() const;
     void withdraw(float withdrawValue);
     void deposit(float depositValue);
+    static int getAccountsQuantity();
 };

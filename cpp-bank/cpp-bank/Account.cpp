@@ -2,12 +2,16 @@
 #include <iostream>
 
 // Constructor
+
+int Account::accountsQuantity = 0;
+
 Account::Account(std::string number, std::string holderDocumentNumber, std::string holderName):
     number(number),
     holderDocumentNumber(holderDocumentNumber),
     holderName(holderName),
     balance(0)
 {
+    accountsQuantity++;
 }
 
 // Getters
@@ -29,6 +33,11 @@ std::string Account::getHolderName() const
 float Account::getBalance() const
 {
     return balance;
+}
+
+int Account::getAccountsQuantity()
+{
+    return accountsQuantity;
 }
 
 // Methods
