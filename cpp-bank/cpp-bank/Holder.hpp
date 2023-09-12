@@ -1,14 +1,14 @@
 #pragma once
 #include <string>
+#include "Document.hpp"
 
 class Holder
 {
 private:
     std::string name;
-    std::string documentNumber;
+    Document document;
 public:
-    Holder(std::string name, std::string documentNumber);
+    Holder(std::string name, Document document);
     std::string getName() const;
-    std::string getDocumentNumber() const;
 };
 

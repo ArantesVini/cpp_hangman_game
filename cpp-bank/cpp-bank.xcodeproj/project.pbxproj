@@ -10,6 +10,7 @@
 		A25297C22AB0996A0040A080 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A25297C12AB0996A0040A080 /* main.cpp */; };
 		A26662962AB0B29800F5DF9B /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26662942AB0B29800F5DF9B /* Account.cpp */; };
 		A26662992AB0E42D00F5DF9B /* Holder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26662972AB0E42D00F5DF9B /* Holder.cpp */; };
+		A2BE51302AB0FB8E0047B671 /* Document.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2BE512E2AB0FB8E0047B671 /* Document.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		A26662952AB0B29800F5DF9B /* Account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Account.hpp; sourceTree = "<group>"; };
 		A26662972AB0E42D00F5DF9B /* Holder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Holder.cpp; sourceTree = "<group>"; };
 		A26662982AB0E42D00F5DF9B /* Holder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Holder.hpp; sourceTree = "<group>"; };
+		A2BE512E2AB0FB8E0047B671 /* Document.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Document.cpp; sourceTree = "<group>"; };
+		A2BE512F2AB0FB8E0047B671 /* Document.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Document.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				A26662952AB0B29800F5DF9B /* Account.hpp */,
 				A26662972AB0E42D00F5DF9B /* Holder.cpp */,
 				A26662982AB0E42D00F5DF9B /* Holder.hpp */,
+				A2BE512E2AB0FB8E0047B671 /* Document.cpp */,
+				A2BE512F2AB0FB8E0047B671 /* Document.hpp */,
 			);
 			path = "cpp-bank";
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2BE51302AB0FB8E0047B671 /* Document.cpp in Sources */,
 				A25297C22AB0996A0040A080 /* main.cpp in Sources */,
 				A26662992AB0E42D00F5DF9B /* Holder.cpp in Sources */,
 				A26662962AB0B29800F5DF9B /* Account.cpp in Sources */,

@@ -1,17 +1,12 @@
 #include "Holder.hpp"
 
-Holder::Holder(std::string name, std::string documentNumber):
+Holder::Holder(std::string name, Document document):
     name(name),
-    documentNumber(documentNumber)
+    document(document)
 {
 }
 
 std::string Holder::getName() const
 {
     return name;
-}
-
-std::string Holder::getDocumentNumber() const
-{
-    return documentNumber;
 }
