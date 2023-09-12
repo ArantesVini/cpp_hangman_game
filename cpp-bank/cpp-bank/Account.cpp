@@ -1,23 +1,32 @@
 #include "Account.hpp"
 #include <iostream>
 
+// Constructor
+Account::Account(std::string number, std::string holderDocumentNumber, std::string holderName)
+{
+    this->number = number;
+    this->holderDocumentNumber = holderDocumentNumber;
+    this->holderName = holderName;
+    this->balance = 0;
+}
+
 // Getters
-std::string Account::getNumber()
+std::string Account::getNumber() const
 {
     return number;
 }
 
-std::string Account::getHolderDocumentNumber()
+std::string Account::getHolderDocumentNumber() const
 {
     return holderDocumentNumber;
 }
 
-std::string Account::getHolderName()
+std::string Account::getHolderName() const
 {
     return holderName;
 }
 
-float Account::getBalance()
+float Account::getBalance() const
 {
     return balance;
 }

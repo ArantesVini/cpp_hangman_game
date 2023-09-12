@@ -8,15 +8,16 @@ private:
     std::string number;
     std::string holderDocumentNumber;
     std::string holderName;
-    float balance = 0;
+    float balance;
 public:
-    std::string getNumber();
-    std::string  getHolderDocumentNumber();
-    std::string  getHolderName();
+    Account(std::string number, std::string holderDocumentNumber, std::string holderName);
+    std::string getNumber() const;
+    std::string  getHolderDocumentNumber() const;
+    std::string  getHolderName() const;
+    float getBalance() const;
     void setNumber(std::string num);
     void setHolderDocumentNumber(std::string documentNumber);
     void setHolderName(std::string name);
-    float getBalance();
     void withdraw(float withdrawValue);
     void deposit(float depositValue);
 };

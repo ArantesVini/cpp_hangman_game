@@ -7,7 +7,8 @@ using namespace std;
 
 
 int main(int argc, const char * argv[]) {
-    Account myAccount;
+    Account myAccount("12345-6", "123-456", "Vinicius Arantes");
+    cout << myAccount.getHolderName() << endl;
     
     myAccount.deposit(500);
     cout << myAccount.getBalance() << endl;
