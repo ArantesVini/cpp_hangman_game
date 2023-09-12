@@ -2,12 +2,12 @@
 #include <iostream>
 
 // Constructor
-Account::Account(std::string number, std::string holderDocumentNumber, std::string holderName)
+Account::Account(std::string number, std::string holderDocumentNumber, std::string holderName):
+    number(number),
+    holderDocumentNumber(holderDocumentNumber),
+    holderName(holderName),
+    balance(0)
 {
-    this->number = number;
-    this->holderDocumentNumber = holderDocumentNumber;
-    this->holderName = holderName;
-    this->balance = 0;
 }
 
 // Getters
