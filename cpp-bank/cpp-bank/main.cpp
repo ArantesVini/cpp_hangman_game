@@ -9,35 +9,34 @@ struct Account
     string holderDocumentNumber;
     string holderName;
     float balance;
-};
-
-
-void withdraw(Account& account, float withdrawValue)
-{
-    if (account.balance < withdrawValue)
+    
+    void withdraw(float withdrawValue)
     {
-        cout << "Insufficient funds." << endl;
-        return;
+        if (balance < withdrawValue)
+        {
+            cout << "Insufficient funds." << endl;
+            return;
+        }
+        
+        if (withdrawValue <= 0)
+        {
+            cout << "Invalid withdraw value" << endl;
+            return;
+        }
+        balance -= withdrawValue;
     }
     
-    if (withdrawValue <= 0)
+    void deposit(float depositValue)
     {
-        cout << "Invalid withdraw value" << endl;
-        return;
+        if (depositValue <= 0)
+        {
+            cout << "Invalid deposit value" << endl;
+            return;
+        }
+        balance += depositValue;
     }
-    account.balance -= withdrawValue;
-}
+};
 
-
-void deposit(Account& account, float depositValue)
-{
-    if (depositValue <= 0)
-    {
-        cout << "Invalid deposit value" << endl;
-        return;
-    }
-    account.balance += depositValue;
-}
 
 int main(int argc, const char * argv[]) {
     Account myAccount;
@@ -49,9 +48,9 @@ int main(int argc, const char * argv[]) {
     
     cout << myAccount.balance << endl;
     
-    deposit(myAccount, 500);
+    myAccount.deposit(500);
     cout << myAccount.balance << endl;
     
-    withdraw(myAccount, 80);
+    myAccount.withdraw(90);
     cout << myAccount.balance << endl;
 }
