@@ -1,5 +1,6 @@
 #include "Document.hpp"
 #include <stdexcept>
+#include <regex>
 
 
 Document::Document(std::string document)
@@ -13,21 +14,9 @@ Document::Document(std::string document)
 
 bool Document::isValidFormat(std::string document)
 {
-    if (document.size() != 11)
-    {
-        return false;
-    }
-    for (int i = 0; i < 11; i++) {
-        if (i == 3 || i == 6) {
-            if (document[i] != '-')
-                return false;
-        }
-        else {
-            if (!std::isdigit(document[i]))
-                return false;
-        }
-    }
-    return true;
+    std::regex ssnPattern("^\\d{3}-\\d{2}-\\d{4}$");
+
+    return std::regex_match(document, ssnPattern);
 }
 
 std::string Document::getDocument()
