@@ -1,21 +1,19 @@
 #pragma once
 
 #include <string>
+#include "Holder.hpp"
 
 class Account
 {
 private:
     std::string number;
-    std::string holderDocumentNumber;
-    std::string holderName;
+    Holder holder;
     float balance;
     static int accountsQuantity;
 public:
-    Account(std::string number, std::string holderDocumentNumber, std::string holderName);
+    Account(std::string number, Holder holder);
     ~Account();
     std::string getNumber() const;
-    std::string  getHolderDocumentNumber() const;
-    std::string  getHolderName() const;
     float getBalance() const;
     void withdraw(float withdrawValue);
     void deposit(float depositValue);

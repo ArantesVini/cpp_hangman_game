@@ -5,10 +5,9 @@
 
 int Account::accountsQuantity = 0;
 
-Account::Account(std::string number, std::string holderDocumentNumber, std::string holderName):
+Account::Account(std::string number, Holder Holder):
     number(number),
-    holderDocumentNumber(holderDocumentNumber),
-    holderName(holderName),
+    holder(holder),
     balance(0)
 {
     accountsQuantity++;
@@ -26,15 +25,6 @@ std::string Account::getNumber() const
     return number;
 }
 
-std::string Account::getHolderDocumentNumber() const
-{
-    return holderDocumentNumber;
-}
-
-std::string Account::getHolderName() const
-{
-    return holderName;
-}
 
 float Account::getBalance() const
 {
