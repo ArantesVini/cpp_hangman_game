@@ -15,9 +15,6 @@ public:
     std::string  getHolderDocumentNumber() const;
     std::string  getHolderName() const;
     float getBalance() const;
-    void setNumber(std::string num);
-    void setHolderDocumentNumber(std::string documentNumber);
-    void setHolderName(std::string name);
     void withdraw(float withdrawValue);
     void deposit(float depositValue);
 };

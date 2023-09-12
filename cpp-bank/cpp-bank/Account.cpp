@@ -31,22 +31,6 @@ float Account::getBalance() const
     return balance;
 }
 
-// Setters
-void Account::setNumber(std::string num)
-{
-    number = num;
-}
-
-void Account::setHolderDocumentNumber(std::string documentNumber)
-{
-    holderDocumentNumber = documentNumber;
-}
-
-void Account::setHolderName(std::string name)
-{
-    holderName = name;
-}
-
 // Methods
 void Account::withdraw(float withdrawValue)
 {
